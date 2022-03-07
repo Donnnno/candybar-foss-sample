@@ -12,6 +12,11 @@ Sample Implementation of CandyBar Dashboard.
 
 Read the [Wiki](https://github.com/zixpo/candybar-sample/wiki) to get Started.
 
+# Apps using Candybar FOSS
+
+- [Arcticons](https://github.com/Donnnno/Arcticons)
+- [Snow](https://github.com/baitmooth/snow)
+
 # License
 ```
 Copyright (c) 2014-2016 Dani Mahardhika
