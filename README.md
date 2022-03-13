@@ -14,8 +14,9 @@ Read the [Wiki](https://github.com/zixpo/candybar-sample/wiki) to get Started.
 
 # Apps using Candybar FOSS
 
-- [Arcticons](https://github.com/Donnnno/Arcticons)
-- [Snow](https://github.com/baitmooth/snow)
+|Arcticons|Snow|
+|---|---|
+<a href="https://github.com/Donnnno/Arcticons"><img height="60" alt="Arcticons" src="https://github.com/Donnnno/Arcticons/blob/main/app/src/dark/play/listings/en-US/graphics/icon/ic_launcher_round.png"></a>|<a href="https://github.com/baitmooth/snow"><img height="80" alt="Snow" src="https://github.com/baitmooth/snow/blob/main/fastlane/metadata/android/en-US/images/icon.png"></a>
 
 # License
 ```
