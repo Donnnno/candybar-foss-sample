@@ -4,6 +4,8 @@
 
 An F-Droid compatible version of Candybar, easy to use.
 
+**IMPORTANT**
+
 [Downlead the zip to get started here](https://github.com/Donnnno/candybar-foss-sample/archive/main.zip) and not from the wiki below! 
 
 Original description below:
