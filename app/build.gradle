@@ -28,6 +28,8 @@ android {
         }
     }
 
+    namespace 'com.candybar.sample'
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -44,6 +46,6 @@ dependencies {
      * If you've missed some versions you've to also follow update guide for those versions
      */
 
-    implementation 'com.github.Donnnno:candybar-foss:3.16.1'
+    implementation 'com.github.Donnnno:candybar-foss:3.17.4'
 
 }
