@@ -1,5 +1,7 @@
 package com.candybar.sample.applications;
 
+import com.candybar.sample.R;
+
 import androidx.annotation.NonNull;
 
 // TODO: Remove `//` below to enable OneSignal
@@ -20,6 +22,12 @@ public class CandyBar extends CandyBarApplication {
         OneSignal.setAppId("YOUR_ONESIGNAL_APP_ID_HERE");
     }
     */
+
+    @NonNull
+    @Override
+    public Class<?> getDrawableClass() {
+        return R.drawable.class;
+    }
 
     @NonNull
     @Override

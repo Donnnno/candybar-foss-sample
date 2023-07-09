@@ -47,6 +47,23 @@ dependencies {
      * If you've missed some versions you've to also follow update guide for those versions
      */
 
-    implementation 'com.github.Donnnno:candybar-foss:3.17.4'
+    implementation 'com.github.Donnnno:candybar-foss:3.18.3'
 
+}
+
+// Code for automatically copying appfilter.xml and drawable.xml
+// from `res/xml` directory to `assets` directory
+task copyXMLs {
+    ['appfilter.xml', 'drawable.xml'].each {file ->
+        copy {
+            from "$projectDir/src/main/res/xml/$file"
+            into "$projectDir/src/main/assets/"
+        }
+    }
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name == 'assembleDebug' || task.name == 'assembleRelease') {
+        task.dependsOn copyXMLs
+    }
 }
