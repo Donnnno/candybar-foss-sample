@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion rootProject.ext.CompileSdk
+    compileSdk rootProject.ext.CompileSdk
 
     defaultConfig {
         applicationId 'com.candybar.sample'
@@ -47,7 +47,7 @@ dependencies {
      * If you've missed some versions you've to also follow update guide for those versions
      */
 
-    implementation 'com.github.Donnnno:candybar-foss:3.18.3'
+    implementation 'com.github.Donnnno:candybar-foss:3.19.0'
 
 }
 
