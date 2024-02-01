@@ -53,8 +53,8 @@ dependencies {
 
 // Code for automatically copying appfilter.xml and drawable.xml
 // from `res/xml` directory to `assets` directory
-task copyXMLs {
-    ['appfilter.xml', 'drawable.xml'].each {file ->
+tasks.register('copyXMLs') {
+    ['appfilter.xml', 'drawable.xml'].each { file ->
         copy {
             from "$projectDir/src/main/res/xml/$file"
             into "$projectDir/src/main/assets/"
@@ -62,7 +62,7 @@ task copyXMLs {
     }
 }
 
-tasks.whenTaskAdded { task ->
+tasks.configureEach { task ->
     if (task.name == 'assembleDebug' || task.name == 'assembleRelease') {
         task.dependsOn copyXMLs
     }
