@@ -12,7 +12,9 @@ android {
         multiDexEnabled true
 
         // Naming app bundles
-        setArchivesBaseName("${parent.name}-v${versionCode}")
+        tasks.withType(Jar).configureEach {
+            archiveBaseName.set("${parent.name}-v${versionCode}")
+        }
     }
 
     bundle {
@@ -47,7 +49,7 @@ dependencies {
      * If you've missed some versions you've to also follow update guide for those versions
      */
 
-    implementation 'com.github.Donnnno:candybar-foss:3.19.0'
+    implementation 'com.github.Donnnno:candybar-foss:3.20.4'
 
 }
 
