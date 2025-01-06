@@ -13,7 +13,7 @@ android {
 
         // Naming app bundles
         tasks.withType(Jar).configureEach {
-            archiveBaseName.set("${parent.name}-v${versionCode}")
+            archiveBaseName.set("${parent.name}-v${versionName}")
         }
     }
 
